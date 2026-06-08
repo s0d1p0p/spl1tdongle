@@ -6,7 +6,7 @@ Split 6×4 + 4 thumb keys per half, Seeed XIAO nRF52840, by sod1pop.
 
 GitHub Actions produces `spl1t_dongle`, `spl1t_left`, and `spl1t_right` UF2 files. Flash each controller via double-tap RST -> drag UF2.
 
-- **Board:** `seeeduino_xiao_ble`
+- **Board:** `xiao_ble//zmk`
 - **Shields:** `spl1t_dongle`, `spl1t_left`, `spl1t_right`
 - **ZMK Studio:** enabled on dongle; locking disabled
 
