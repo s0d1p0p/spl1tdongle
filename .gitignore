@@ -1,0 +1,7 @@
+.DS_Store
+*.uf2
+build/
+modules/
+zephyr/
+.config
+.cache

@@ -1,0 +1,6 @@
+/ {
+    layouts_spl1t_position_map: layouts_spl1t_position_map {
+        compatible = "zmk,physical-layout-position-map";
+        complete;
+    };
+};

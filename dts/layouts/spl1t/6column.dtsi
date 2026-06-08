@@ -1,0 +1,67 @@
+#include <physical_layouts.dtsi>
+#include <layouts/spl1t/position_map.dtsi>
+
+/ {
+    spl1t_6col_layout: spl1t_6col_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "6 Column";
+
+        keys
+            = <&key_physical_attrs 100 100    0   97  (-800)    50   147>
+            , <&key_physical_attrs 100 100   95   96  (-800)   145   146>
+            , <&key_physical_attrs 100 100  196   21  (-400)   246    71>
+            , <&key_physical_attrs 100 100  304    0       0     0     0>
+            , <&key_physical_attrs 100 100  399   21       0     0     0>
+            , <&key_physical_attrs 100 100  493   42       0     0     0>
+            , <&key_physical_attrs 100 100  915   42       0     0     0>
+            , <&key_physical_attrs 100 100 1009   21       0     0     0>
+            , <&key_physical_attrs 100 100 1104    0       0     0     0>
+            , <&key_physical_attrs 100 100 1212   21     400  1262    71>
+            , <&key_physical_attrs 100 100 1313   96     800  1363   146>
+            , <&key_physical_attrs 100 100 1408   97     800  1458   147>
+            , <&key_physical_attrs 100 100   12  185  (-800)    62   235>
+            , <&key_physical_attrs 100 100  108  185  (-800)   158   235>
+            , <&key_physical_attrs 100 100  202  110  (-400)   252   160>
+            , <&key_physical_attrs 100 100  304   89       0     0     0>
+            , <&key_physical_attrs 100 100  399  110       0     0     0>
+            , <&key_physical_attrs 100 100  493  131       0     0     0>
+            , <&key_physical_attrs 100 100  915  131       0     0     0>
+            , <&key_physical_attrs 100 100 1009  110       0     0     0>
+            , <&key_physical_attrs 100 100 1104   89       0     0     0>
+            , <&key_physical_attrs 100 100 1206  110     400  1256   160>
+            , <&key_physical_attrs 100 100 1300  185     800  1350   235>
+            , <&key_physical_attrs 100 100 1396  185     800  1446   235>
+            , <&key_physical_attrs 100 100   25  274  (-800)    75   324>
+            , <&key_physical_attrs 100 100  120  273  (-800)   170   323>
+            , <&key_physical_attrs 100 100  208  199  (-400)   258   249>
+            , <&key_physical_attrs 100 100  304  178       0     0     0>
+            , <&key_physical_attrs 100 100  399  199       0     0     0>
+            , <&key_physical_attrs 100 100  493  220       0     0     0>
+            , <&key_physical_attrs 100 100  915  220       0     0     0>
+            , <&key_physical_attrs 100 100 1009  199       0     0     0>
+            , <&key_physical_attrs 100 100 1104  178       0     0     0>
+            , <&key_physical_attrs 100 100 1200  199     400  1250   249>
+            , <&key_physical_attrs 100 100 1288  273     800  1338   323>
+            , <&key_physical_attrs 100 100 1383  274     800  1433   324>
+            , <&key_physical_attrs 100 100  238  319  (-400)   288   369>
+            , <&key_physical_attrs 100 100  352  322       0     0     0>
+            , <&key_physical_attrs 100 100  456  336    1500   506   386>
+            , <&key_physical_attrs 100 100  554  377    3000   604   427>
+            , <&key_physical_attrs 100 100  854  377 (-3000)   904   427>
+            , <&key_physical_attrs 100 100  952  336 (-1500)  1002   386>
+            , <&key_physical_attrs 100 100 1056  322       0     0     0>
+            , <&key_physical_attrs 100 100 1170  319     400  1220   369>
+            ;
+    };
+};
+
+&layouts_spl1t_position_map {
+    spl1t_6col_posmap: six {
+        physical-layout = <&spl1t_6col_layout>;
+        positions
+            = < 0  1  2  3  4  5        6  7  8  9 10 11>
+            , <12 13 14 15 16 17       18 19 20 21 22 23>
+            , <24 25 26 27 28 29       30 31 32 33 34 35>
+            , <         36 37 38    39 40 41 42 43      >;
+    };
+};

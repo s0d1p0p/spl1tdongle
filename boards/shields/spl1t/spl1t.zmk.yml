@@ -1,0 +1,14 @@
+file_format: "1"
+id: spl1t
+name: Spl1t
+type: shield
+url: https://github.com/sod1pop/zmk-config-spl1t
+requires: [seeeduino_xiao]
+features:
+  - keys
+  - studio
+  - split
+siblings:
+  - spl1t_dongle
+  - spl1t_left
+  - spl1t_right
